@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="SILENT PROGRESSOR — your personal AI, study, fitness and task assistant.">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/style.css">
+  <title>SILENT PROGRESSOR</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">SP</div><div><strong>SILENT</strong><span>PROGRESSOR</span></div></div>
+      <p class="muted tiny">PERSONAL COMMAND CENTER</p>
+      <nav id="nav">
+        <button class="nav-item active" data-page="home">⌂ <span>Dashboard</span></button>
+        <button class="nav-item" data-page="chat">✦ <span>AI Chat</span></button>
+        <button class="nav-item" data-page="study">▤ <span>Study</span></button>
+        <button class="nav-item" data-page="fitness">◈ <span>Fitness</span></button>
+        <button class="nav-item" data-page="tasks">✓ <span>Tasks</span></button>
+        <button class="nav-item" data-page="files">▧ <span>Files & Notes</span></button>
+        <button class="nav-item" data-page="web">◎ <span>Web Search</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="status-dot"></div><span>Local-first workspace</span>
+        <button id="installBtn" class="secondary full hidden">Install app</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="menuBtn" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+        <div><div class="eyebrow">YOUR DAILY OPERATING SYSTEM</div><h1 id="pageTitle">Dashboard</h1></div>
+        <div class="top-actions"><span id="todayLabel" class="date-label"></span><button class="avatar" title="SILENT PROGRESSOR">SP</button></div>
+      </header>
+      <div id="page" class="page"></div>
+      <footer>Progress over perfection. Your saved data stays in this browser unless you export it or connect a service.</footer>
+    </main>
+  </div>
+  <div id="toast" role="status" class="toast hidden"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
